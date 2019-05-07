@@ -31,17 +31,34 @@ function go2(){
 
 // else if statement
 function go3(){
-    var number = document.getElementById("myInput").value;
+    var score = document.getElementById("myInput").value;
     var text;
     
-    if (number === "1" || number === "2" ) {
-        text = "Number is less than three";
+    if (score > 93 && score < 101) {
+        text = "A";
     
-  } else if (number === "3") {
-    text = "Number is Three";
-    
-  } else {
-    text = "Number is above three";
-  }
+    } else if (score > 89 && score < 94 ) {
+        text = "A-";
+    } else if (score > 86 && score < 90 ) {
+        text = "B+";
+    } else if (score > 83 && score < 87 ) {
+        text = "B";
+    } else if (score > 79 && score < 84 ) {
+        text = "B-";
+    } else if (score > 76 && score < 80 ) {
+        text = "C+";
+    } else if (score > 72 && score < 77 ) {
+        text = "C";
+    } else if (score > 69 && score < 73 ) {
+        text = "C-";
+    } else if (score > 66 && score < 70 ) {
+        text = "D+";
+    } else if (score > 59 && score < 67 ) {
+        text = "D";
+    } else if (score > -1 && score < 60 ) {
+        text = "D-";
+    } else {
+    text = "Invalid score";
+    }
   document.getElementById("demo").innerHTML = text;
 }
