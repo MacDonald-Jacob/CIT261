@@ -36,8 +36,8 @@ function go4(){
 function go5(){
   var date = [3, 5, 7];
   var text = "";
-  var x;
-  for (x of date) {
+  for (let x of date) {
+    x += " ";
     alert(text += date[x] + " ");
   }
 }
