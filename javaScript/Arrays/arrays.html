@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Fluency Examples</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="arrays.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Arrays</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href= "../javaScript.html">Back</a></li>
+            <li><a href= "../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+    <hr>
+    <main>
+        <h2>Array</h2>
+        <p>This Array prints out the names of The Avengers.</p>
+        <p id="test"></p>
+        <script>
+         var hero = [" Hulk", " Ironman", " Thor", " Captain America", " Hawkeye", " Black Panther", " Vision", " Black Widow"];
+            document.getElementById("test").innerHTML = hero;
+        </script>
+        
+        <h2>Accessing Arrays</h2>
+        <p>This script accesses the value of the 3rd element in the list.</p>
+        <p id="test2"></p>
+        <script>
+         var hero = [" Hulk", " Ironman", " Thor", " Captain America", " Hawkeye", " Black Panther", " Vision", " Black Widow"];
+            document.getElementById("test2").innerHTML = hero[4];
+        </script>
+
+        <h2>Changing an Array Element</h2>
+        <p>This statement changes the value of the first element in the list.</p>
+        <p id="test3"></p>
+        <script>
+        var hero = [" Hulk", " Ironman", " Thor", " Captain America", " Hawkeye", " Black Panther", " Vision", " Black Widow"];
+            hero[0] = "Ant-Man";
+            document.getElementById("test3").innerHTML = hero;
+        </script>
+
+        <h2>Accessing members using names</h2>
+        <p>This statement accesses the color of the hero by it's name. Thor:</p>
+        <p id="test4"></p>
+        <script>
+        var hero = {Hulk: "Green", Ironman: "Red", Thor: "Yellow", CaptainAmerica: "Blue", Hawkeye: "Brown", BlackPanther: "Purple", Vision: "Orange", BlackWidow: "Black"};
+            document.getElementById("test4").innerHTML = hero["Thor"];
+        </script>
+
+        <h2>Length Property</h2>
+        <p>This returns the length of the array</p>
+        <p id="test5"></p>
+        <script>
+        var hero = [" Hulk", " Ironman", " Thor", " Captain America", " Hawkeye", " Black Panther", " Vision", " Black Widow"];
+            document.getElementById("test5").innerHTML = hero.length;
+        </script>
+
+        <h2>Accessing Elements in Arrays</h2>
+        <p>This access the first array Element (You can use this to access any Element in the Array).</p>
+        <p id="test6"></p>
+        <script>
+        var hero = [" Hulk", " Ironman", " Thor", " Captain America", " Hawkeye", " Black Panther", " Vision", " Black Widow"];
+            var first = hero[0];
+            document.getElementById("test6").innerHTML = first;
+        </script>
+
+        <h2>Adding Array Elements</h2>
+        <p>This will push a new element into the array(you can also use the length property to add elements).</p>
+        <p id="test7"></p>
+        <script>
+        var hero = [" Hulk", " Ironman", " Thor", " Captain America", " Hawkeye", " Black Panther", " Vision", " Black Widow"];
+        hero.push(" Wasp");    
+        document.getElementById("test7").innerHTML = hero;
+        </script>
+    </main>
+</body>
+</html>
