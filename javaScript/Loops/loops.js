@@ -26,7 +26,6 @@ function go3(){
 function go4(){
   var date = {month: "May", day: "20th", year: 2019};
   var text = "";
-  var x;
   for (x in date) {
     alert(text += date[x] + " ");
   }
@@ -40,4 +39,9 @@ function go5(){
     x += " ";
     alert(text += date[x] + " ");
   }
+}
+
+// parameters
+function go6(a = 5,b = 5,c = a*b){
+  alert( a + " " + "*" + " " + b + " " + "=" + " " + c);
 }
