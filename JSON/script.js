@@ -2,7 +2,7 @@
 const weatherObject = new XMLHttpRequest();
 
 //initialize or set up
-weatherObject.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=84103,us&appid=44ae659aedc9547e507e6cd8e21c0f5a', true);
+weatherObject.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=84103,us&appid=44ae659aedc9547e507e6cd8e21c0f5a&units=imperial', true);
 
 //get data and store in local device
 weatherObject.send();
