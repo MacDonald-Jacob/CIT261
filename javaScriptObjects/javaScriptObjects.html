@@ -1,33 +1,38 @@
-<!doctype html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javaScript Fluency Examples</title>
     <link href="style.css" rel="stylesheet">
-    <title>MacDonald-Jacob: JavaScript Objects</title>
-  </head>
-
-  <body>
+    <script src="scripts.js"></script>
+</head>
+<body>
     <header>
-        <h1>JavaScript Objects</h1>
+        <h1>javaScript Objects</h1>
     </header>
+    <hr>
     <nav>
         <ul>
             <li><a href= "../index.html">Home</a></li>
         </ul>
     </nav>
-
+    <br>
+    <hr>
     <main>
-        <h2>Categories</h2>
-        <img src="javaScript.jpg" alt="javascript">
-
-        <ul>
-            <li><a href="Loops/loops.html">Object Creation Functions</a></li>
-        </ul>
+        <h1>Weather Summery for Salt Lake City, Utah</h1>
+        <p>I am retreiving this information from <a href ="https://openweathermap.org">openweathermap.org</a></p>
+        <p>I am also using AJAX XMLHttpRequest to request the data from the server.</p>
+        <div class="conditions">
+            <div class="place">
+                <h2>Weather conditions for <span id="place">city</span></h2>
+                <h3>Current Conditions</h3>
+                <p>Currently: <span id="sky">currently</span></p>
+                <p>Temperature: <span id ="temp">temp</span>°</p>
+                <p>Humidity: <span id ="humidity">humidity</span>%</p>
+                <p>Wind: <span id="windSpeed"></span>mph</p>
+                <p>Feels like: <span id="windChill"></span>°</p>
+            </div>
+        </div>
+        
     </main>
-
-<footer>
-&copy; Jacob MacDonald 2019
-
-</footer>
 </body>
 </html>
