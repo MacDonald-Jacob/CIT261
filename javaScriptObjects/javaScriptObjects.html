@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>javaScript Fluency Examples</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="scripts.js"></script>
-</head>
-<body>
-    <header>
-        <h1>javaScript Objects</h1>
-    </header>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href= "../index.html">Home</a></li>
-        </ul>
-    </nav>
-    <br>
-    <hr>
-    <main>
-        <h1>Weather Summery for Salt Lake City, Utah</h1>
-        <p>I am retreiving this information from <a href ="https://openweathermap.org">openweathermap.org</a></p>
-        <p>I am also using AJAX XMLHttpRequest to request the data from the server.</p>
-        <div class="conditions">
-            <div class="place">
-                <h2>Weather conditions for <span id="place">city</span></h2>
-                <h3>Current Conditions</h3>
-                <p>Currently: <span id="sky">currently</span></p>
-                <p>Temperature: <span id ="temp">temp</span>°</p>
-                <p>Humidity: <span id ="humidity">humidity</span>%</p>
-                <p>Wind: <span id="windSpeed"></span>mph</p>
-                <p>Feels like: <span id="windChill"></span>°</p>
-            </div>
-        </div>
-        
-    </main>
-</body>
+    <head>
+        <title>javaScript Fluency Examples</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>javaScript Objects</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <h1>Object Creation Function</h1>
+            <h2>There are multiple ways to create objects in javaScript</h2>
+            <h3>Object Literal</h3>
+            <p>let hero = {name: 'Batman', comic:'DC', superpower:'Money'};</p>
+            <input type=button onclick=objectCreationFunction1() value="Show Object">
+
+            <h3>Object Constructor Function</h3>
+            <p>Constructor function allows you to create multiple objects of the same type (Here I will display the names of multiple hereos) </p>
+            <input type=button onclick=objectCreationFunction2() value="Show Object">
+
+            <h3>Object Create Method</h3>
+            <p>Object.create() allows you to create objects with more attribute options (Here I am just displaying name but if you look at the javascript you can see more attributes)</p>
+            <input type=button onclick=objectCreationFunction3() value="Show Object">
+
+
+            <h1>Inheritance</h1>
+            <p>All javaScript objects inherit properties and methods from a prototype</p>
+            <p>The first function will display the values of function number1. Function2 will call the values from number1 and add it's own value as well.</p>
+            <input type=button onclick=inheritance1() value="Click Me">
+
+
+            <h1>Properties</h1>
+            <h2>Properties are the values associated with a JavaScript object</h2>
+            <h3>Access properties</h3>
+            <P>You can access the properties using <u>objectName.property</u> like this: (Here I will access Batmans superpower)</P>
+            <input type=button onclick=properties1() value="Access Property">
+
+            <h3>Add properties</h3>
+            <p>You can add properties using <u>objectName.newPropery = 'newValue'</u> like this: (Here I will add the color property with a value of black)</p>
+            <input type=button onclick=properties2() value="Add Property">
+            
+            <h3>Delete properties</h3>
+            <p>You can delete a property from an object using <u>delete objectName.property</u> like this: (Here I will delete the comic property)</p>
+            <input type=button onclick=properties3() value="Delete Property">
+
+
+            <h1>Methods</h1>
+            <p>Methods can be part of object while creation or can be added later like this: (keep pressing ok)</p>
+            <input type=button onclick=methods1() value="Add methods">
+
+
+            <h1>Instantiation</h1>
+
+        </main>
+    </body>
+    <footer>
+        <script src="scripts.js"></script>
+    </footer>
 </html>
