@@ -7,7 +7,7 @@ weatherObject.open('GET','https://api.openweathermap.org/data/2.5/weather?zip=84
 //get data and store in local device
 weatherObject.send();
 
-//convert incoming data to object
+//convert incoming data to object using JSON.parse
 weatherObject.onload = function(){
     let weatherInfo = JSON.parse(weatherObject.responseText);
     console.log(weatherInfo);
