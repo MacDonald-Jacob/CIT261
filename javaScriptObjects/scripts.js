@@ -25,6 +25,21 @@ function objectCreationFunction1(){
     window.alert("Heroes: " + batman.name + ", " + hulk.name + ", " + flash.name)
 }
 
+//ES6 Pseudo classical
+function objectCreationFunction4(){
+    class DC{
+        constructor(hero){
+            this.hero = batman;
+            this.vigilante = 'awake'; 
+        }
+        awakeHero() { this.hero = 'awake'};
+        asleepHero() { this.hero = 'asleep'}
+
+    }
+    var hero_dc = new DC('shazam');
+    window.alert("Heroes: " + hero_dc.hero + ", " + DC.hero + ", " + hero.hero)
+}
+
 //Create method
 function objectCreationFunction3(){
 let hero = Object.create(Object.prototype,
@@ -41,6 +56,8 @@ let hero = Object.create(Object.prototype,
     });
   window.alert(hero.name) 
 }
+
+
 
 
 /*************Inheritance************/
