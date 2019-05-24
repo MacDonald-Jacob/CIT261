@@ -52,3 +52,24 @@ function objStorage(){
     //display object
     alert (parseObj.comic + ": " + parseObj.firstName + " " + parseObj.lastName);
 }
+
+//Storing and retrieving simple data with sessionStorage
+function favHero2(){
+    //create variable with the same name as key and extract value from localStorage using getItem()
+    name2 = sessionStorage.getItem("name2");
+    //check to see if value exists.
+    if (name2 == null || name2 == "null"){
+      alert("Your favorite superhero is ...");
+      //prompt user to add value so it exists
+      name2 = prompt("Who is your favorite superhero?");
+      //store value
+      sessionStorage.setItem("name2", name2);
+      //return new value
+    } else {
+      alert ("Your favorite superhero is " + name2 + "." + " But, Batman is still better!");
+    } 
+} 
+
+function clearStorage2(){
+    sessionStorage.clear();
+}

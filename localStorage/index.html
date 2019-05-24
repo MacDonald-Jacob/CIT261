@@ -6,7 +6,7 @@
     </head>
     <body>
         <header>
-            <h1>Local Storage</h1>
+            <h1>Local/Session Storage</h1>
         </header>
         <hr>
         <nav>
@@ -44,9 +44,14 @@
             <h3>Objects</h3>
             <input type=button onclick=objStorage() value="Click Here">
 
-
-
-            
+            <h1>Fun Fact</h1>
+            <h3>similar to localStorage, there is also sessionStorage</h3>
+            <p>Session storage is similar to localStorage; the only difference is while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when the page session ends.</p>
+            <p>This example will only store the data as long as the browser is open. It will survive over reloads and restores.</p>
+            <p>(Remember to click the "Show Data" button again to see your input and the "Clear Storage" button to star over.)</p>
+            <input type=button onclick=favHero2() value="Show Data">
+            <input type=button onclick=clearStorage2() value="Clear Storage">
+           
         
         </main>
         <footer></footer>
