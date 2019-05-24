@@ -30,8 +30,20 @@
             <img src="images/blank.png">
             
             <h1>Storing and retrieving simple data</h1>
-            <input type=button onclick=greet() value="Show Object">
+            <p>This is an example of storing the data you input and then retrieving it after. Make sure you click the "Show Data" button again after you input your superhero.</p> 
+            <p>You can also click the "Clear Storage" button to clear your input and start over.</p>
+            <input type=button onclick=favHero() value="Show Data">
             <input type=button onclick=clearStorage() value="Clear Storage">
+
+            <h1>Storing Arrays and Objects</h1>
+            <h3>Arrays</h3>
+            <p>Local Storage only supports strings so we have to use JSON.stringify() and JSON.parse() for arrays and objects.</p>
+            <p>You will have to look at the javaScript code to see the array and object code.</p>
+            <input type=button onclick=arrayStorage() value="Click Here">
+
+            <h3>Objects</h3>
+            <input type=button onclick=objStorage() value="Click Here">
+
 
 
             

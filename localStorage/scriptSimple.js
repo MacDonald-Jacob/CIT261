@@ -1,14 +1,54 @@
-function greet(){
+//Storing and retrieving simple data
+function favHero(){
+    //create variable with the same name as key and extract value from localStorage using getItem()
     name = localStorage.getItem("name");
+    //check to see if value exists.
     if (name == null || name == "null"){
-      alert("Hi, Stranger!");
-      name = prompt("What is your name?");
+      alert("Your favorite superhero is ...");
+      //prompt user to add value so it exists
+      name = prompt("Who is your favorite superhero?");
+      //store value
       localStorage.setItem("name", name);
+      //return new value
     } else {
-      alert ("Hi, " + name + "!");
-    } // end greet
-} // end function 
+      alert ("Your favorite superhero is " + name + "." + " But, Batman is still better!");
+    } 
+} 
 
 function clearStorage(){
     localStorage.clear();
+}
+
+//Arrays in local storage
+function arrayStorage(){
+    //create array
+    var hereos = new Array();
+    //fill array
+    hereos.push('Batman', ' Superman', ' WonderWoman', ' Aquaman');
+    // turn array into a string to store it
+    var JSONusers = JSON.stringify(hereos);
+    // store it
+    localStorage.setItem('hereos', JSONusers);
+    // parse data to display
+    var changedHereos = JSON.parse(localStorage['hereos']);
+    //display 
+    alert (changedHereos);
+}
+
+
+function objStorage(){
+//create object
+    var myObj = {
+        firstName: "Bruce",
+        lastName: "Wayne",
+        comic: "DC"
+    };
+    //stringify object so we can store it
+    var JSONobj = JSON.stringify(myObj);
+    // store object
+    localStorage.setItem('myObj', JSONobj);
+    //parse object so we can view/use it
+    var parseObj = JSON.parse(localStorage.getItem('myObj'));
+    //display object
+    alert (parseObj.comic + ": " + parseObj.firstName + " " + parseObj.lastName);
 }
