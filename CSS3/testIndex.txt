@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manipulating CSS Class Properties Using JavaScript Fluency Examples</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Manipulating CSS Class Properties Using JavaScript</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <div id ="boxes">
+                <div id = "oneBox">
+            <button onclick ="changeBG('box1', '#F0F');">Magenta</button> 
+            <button onclick ="changeBG('box1', '#0C0');">Green</button> 
+            <button onclick ="changeBG('box1', '#9DCEFF');">Original</button> 
+
+            <div id = "box1">Content in box 1....</div>
+            </div>
+            
+            <div id = "twoBox">
+            <button onclick ="fadeOut('box2');">Fade out</button>
+            <button onclick ="fadeIn('box2');">Fade in</button> 
+ 
+            <div id = "box2">Content in box 2....</div>
+            </div>
+
+            <div id = "threeBox">
+            <button onclick ="slideShut('box3');">Slide Closed</button> 
+            <button onclick ="slideOpen('box3');">Slide Open</button>
+ 
+            <div id = "box3">Content in box 3....</div>
+            </div>
+        </div>
+            <br>
+            <div id = "box4">Content in box 4....</div>
+            <br>
+            <button onclick ="slideIn('box4');">Slide In</button> 
+            <button onclick ="slideOut('box4');">Slide Out</button>
+
+
+        </main>
+        <footer></footer>
+
+    </body>
+        <script src="scripts.js"></script>
+
+    
+</html>

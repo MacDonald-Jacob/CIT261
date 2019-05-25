@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manipulating CSS Class Properties Using JavaScript Fluency Examples</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Manipulating CSS Class Properties Using JavaScript</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <div id ="boxes">
+                 <div id = "twoBox">
+                    <button onclick ="fadeIn('box2');">Call for Batman!</button>
+                    <button onclick ="fadeOut('box2');">Turn off Bat Signal</button>
+ 
+                    <div id = "box2">
+                    <img src = "images/batSignal.png" alt = "batman signal">
+                    </div>
+                </div>
+                
+                <div id = "oneBox">
+            <button onclick ="changeBG('box1', '#F0F');">Magenta</button> 
+            <button onclick ="changeBG('box1', '#0C0');">Green</button> 
+            <button onclick ="changeBG('box1', '#9DCEFF');">Original</button> 
+
+            <div id = "box1">
+                <img src ="images/batmanStanding3.png" alt = "batman standing">
+            </div>
+            </div>
+            
+           
+            <div id = "threeBox">
+            <button onclick ="slideShut('box3');">Slide Closed</button> 
+            <button onclick ="slideOpen('box3');">Slide Open</button>
+ 
+            <div id = "box3">
+                <img src = "images/batmanFlying.png" alt = "batman flying">
+            </div>
+            </div>
+        </div>
+            <br>
+            <div id = "box4">
+                <img src ="images/batmanStanding2.png" alt = "batman standing2">
+            </div>
+            <br>
+            <button onclick ="slideIn('box4');">Slide In</button> 
+            <button onclick ="slideOut('box4');">Slide Out</button>
+
+
+         
+
+
+        </main>
+        <footer></footer>
+
+    </body>
+        <script src="scripts.js"></script>
+
+    
+</html>
