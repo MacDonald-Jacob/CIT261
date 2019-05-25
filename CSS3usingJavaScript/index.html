@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manipulating CSS Class Properties Using JavaScript Fluency Examples</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Manipulating CSS Class Properties Using JavaScript</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <div id = "entirePage">
+                <h2>Manipulate CSS Class using JavaScript</h2>
+                <p>CSS Class can be changed using DOM in JavaScript.</p>
+                <hr>
+                <h3>Change basic HTML Style</h3>
+                <p>Click on image to change background color</p>
+            
+                <img id = "batman" src = "images/batman2.png" onclick="bckgColor()" alt = "batman">
+                <br>
+                <button type="button" onclick="hideMe()">Hide</button>
+                <button type="button" onclick="showMe()">Show</button>
+
+                <hr>
+                <h3>Change div text with mouseover and mouseout</h3>
+                <div class = "mouseOver" onmouseover="mOver(this)" onmouseout="mOut(this)">
+                    Turn on the bat signal!
+                </div>
+            
+                <hr>
+                <h3>Update content of text box using onchange. Click anywhere after typing and the text will go uppercase</h3>
+                <p>Enter your name below</p>
+                <input type="text" id="fname" onchange="upperCase()">
+                
+                <hr>
+                <h3>Change the font of the entire page</h3>
+                <button type="button" onclick="fontChange()">Change Fonts</button>
+            </div>
+
+        </main>
+        <footer></footer>
+
+    </body>
+        <script src="scripts.js"></script>
+
+    
+</html>
