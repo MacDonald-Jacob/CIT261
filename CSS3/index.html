@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Manipulating CSS Class Properties Using JavaScript Fluency Examples</title>
+        <title>Creating Transitions and Animations in CSS and triggering them with javaScript.</title>
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Manipulating CSS Class Properties Using JavaScript</h1>
+            <h1>Creating Transitions and Animations in CSS and triggering them with javaScript.</h1>
         </header>
         <hr>
         <nav>
@@ -18,52 +18,51 @@
         <hr>
         <main>
             <div id ="boxes">
-                 <div id = "twoBox">
-                    <button onclick ="fadeIn('box2');">Call for Batman!</button>
-                    <button onclick ="fadeOut('box2');">Turn off Bat Signal</button>
+                 <div id = "firstBox">
+                    <p>Using transition</p>
+                    <button onclick ="fadeIn();">Call Batman!</button>
  
+                    <div id = "box1">
+                        <img src = "images/night.png" id = "nightSky" alt = "night">
+                        <img src = "images/batSignal.png" id = "batSignal" class = "batSignalC" alt = "batman signal">
+                    </div>
+                </div>
+
+                
+                <div id = "secondBox">
+                    <p>Using animation</p>
+                    <button onclick ="swingIn('bigBatman');">Swing In</button>
+             
                     <div id = "box2">
-                    <img src = "images/batSignal.png" alt = "batman signal">
+                        <img src = "images/batmanFlying.png" id = "bigBatman" alt = "batman flying">
+                    </div>
+                </div>
+
+                
+                <div id = "thirdBox">
+                    <button onclick ="slideIn('box3');">Slide In</button> 
+                    
+                    <div id = "box3">
+                        <img src ="images/batmanStanding2.png" id = "swoopIn" class = "swoopInC" alt = "batman standing2">
                     </div>
                 </div>
                 
-                <div id = "oneBox">
-            <button onclick ="changeBG('box1', '#F0F');">Magenta</button> 
-            <button onclick ="changeBG('box1', '#0C0');">Green</button> 
-            <button onclick ="changeBG('box1', '#9DCEFF');">Original</button> 
+                
+                <div id = "fourthBox">
+                    <button onclick ="dance();">Dodge the bullets!</button> 
 
-            <div id = "box1">
-                <img src ="images/batmanStanding3.png" alt = "batman standing">
-            </div>
-            </div>
+                    <div id = "box4">
+                    <img src ="images/batmanStanding3.png" id ="batStanding"  alt = "batman standing">
+                    </div>
+                </div>
             
-           
-            <div id = "threeBox">
-            <button onclick ="slideShut('box3');">Slide Closed</button> 
-            <button onclick ="slideOpen('box3');">Slide Open</button>
- 
-            <div id = "box3">
-                <img src = "images/batmanFlying.png" alt = "batman flying">
             </div>
-            </div>
-        </div>
-            <br>
-            <div id = "box4">
-                <img src ="images/batmanStanding2.png" alt = "batman standing2">
-            </div>
-            <br>
-            <button onclick ="slideIn('box4');">Slide In</button> 
-            <button onclick ="slideOut('box4');">Slide Out</button>
-
-
-         
-
 
         </main>
+        
         <footer></footer>
 
     </body>
         <script src="scripts.js"></script>
 
-    
 </html>

@@ -27,28 +27,35 @@ div#boxes {
     justify-content: space-between;
 
 }
+div#firstBox, div#secondBox, div#thirdBox, div#fourthBox{
+    width: 50%;
+    margin-bottom:30px;
+}
 
 div#box1 {
-    background: #9DCEFF;
+    background: black;
     width: 400px;
-    height: 200px;
+    height: 310px;
+    display:none;
 }
+
 div#box2 {
     background: #9DCEFF;
     width: 400px;
-    height: 200px;
-}
-div#box3 {
-    background: #9DCEFF;
-    width: 400px;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
 }
-div#box4 {
-    background: #9DCEFF;
+div#box3 {
+    background: rgb(73, 91, 110);
     width: 400px;
-    height: 200px;
+    height: 300px;
     position: absolute;
-    margin-top: 3rem;
-    left: -400px;
+    margin-top: 1rem;
+    left: -600px;
+}
+
+div#box4 {
+    background: #FFF;
+    width: 210px;
+    height: 300px;
 }

@@ -7,22 +7,16 @@ function changeBG(el,clr){
 }
 
 // FADE IN AND OUT
-function fadeOut(el){
+function fadeOut(){
     var elem = document.getElementById(el);
-    elem.style.transition = "opacity 1.0s linear 0s";
-    elem.style.opacity = 0;
 }
-function fadeIn(el){
-    var elem = document.getElementById(el);
-    elem.style.transition = "opacity 1.0s linear 0s";
-    elem.style.opacity = 1;
-}
+
 
 //SLIDE OPEN AND CLOSE
 function slideOpen(el){
     var elem = document.getElementById(el);
     elem.style.transition = "height 1.0s linear 0s";
-    elem.style.height = "200px";
+    elem.style.height = "300px";
 }
 function slideShut(el){
     var elem = document.getElementById(el);
@@ -30,14 +24,14 @@ function slideShut(el){
     elem.style.height = "0px";
 }
 
-//Transition
+//Transition in and out
 function slideIn(el){
     var elem = document.getElementById(el);
     elem.style.transition = "left 1.0s ease-in 0s";
-    elem.style.left = "10px";
+    elem.style.left = "50px";
 }
 function slideOut(el){
     var elem = document.getElementById(el);
     elem.style.transition = "left 1.0s ease-out 0s";
-    elem.style.left = "-400px";
+    elem.style.left = "-600px";
 }

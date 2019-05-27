@@ -27,33 +27,69 @@ div#boxes {
     justify-content: space-between;
 
 }
-
-div#box1 {
-    background: #9DCEFF;
-    width: 400px;
-    height: 200px;
-}
-div#box2 {
-    background: black;
-    width: 400px;
-    height: 310px;
-    display:none;
+div#firstBox, div#secondBox, div#thirdBox, div#fourthBox{
+    width: 50%;
+    margin-bottom:30px;
 }
 
-
-div#box3 {
-    background: #9DCEFF;
-    width: 400px;
-    height: 200px;
-    overflow: hidden;
+#nightSky{
+    position:relative;
+    top: 0;
+    left: 0;
 }
-div#box4 {
-    background: rgb(73, 91, 110);
-    width: 550px;
-    height: 431px;
+.batSignalC{
+    opacity: 0;
+    position:absolute;
+    top:220px;
+    left:80px;
+    transition: opacity 3.0s;
+
+}
+#box2{
+    visibility: hidden;
+}
+.swingingBatman{
+    visibility: visible !important;
+    animation-name: cssAnimation;
+    animation-duration:3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes cssAnimation {
+    from {
+      -webkit-transform: rotate(0deg) scale(.1) skew(0deg) translate(100px);
+    }
+    to {
+      -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(100px);
+    }
+  }
+
+.swoopInC {
+    width: 400px;
+    height: 300px;
     position: absolute;
-    margin-top: 3rem;
+    margin-top: 1rem;
     left: -600px;
+    transition:left 1s ease-in 0s;
 }
+
+.danceBatman {
+    width: 210px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+    animation-name: ani;
+    animation-duration: 4s;
+  }
+  
+  @keyframes ani {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:300px; top:0px;}
+    50%  {background-color:red; left:0px; top:0px;}
+    75%  {background-color:yellow; left:300px; top:0px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
 
 
