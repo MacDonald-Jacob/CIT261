@@ -1,0 +1,76 @@
+header h1 {color: #0076bb; }
+nav ul {padding: 0;}
+nav ul li {
+    float: left;
+    list-style-type: none;
+
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #f89c1f;
+}
+main h1{
+    margin:3rem 0 0 0;
+    color: #09035e;
+}
+
+p {
+    margin: 0 0 2px 0;
+}
+hr {
+    margin-top:2rem;
+}
+
+/* general styles */
+main {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+main h1, h2 {
+    font-family: 'Ceviche One', cursive;
+  }
+  
+  
+  /* header styles */
+  
+  header2 h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgba(178,34,34,1);
+    -webkit-text-stroke: 1px black;
+  }
+  
+  header2 p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* section styles */
+  
+  section article {
+    width: 33%;
+    float: left;
+  }
+  
+  section p {
+    margin: 5px 0;
+  }
+  
+  section ul {
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  #buttons{
+    color:blue;
+    margin-left:9rem;
+    align-items:right;
+  }
