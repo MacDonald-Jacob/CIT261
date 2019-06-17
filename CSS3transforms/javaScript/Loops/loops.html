@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Fluency Examples</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="loops.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Loops</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href= "../javaScript.html">Back</a></li>
+            <li><a href= "../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+    <hr>
+    <main>
+        <h2>All of these codes use functions and some use variables</h2>
+        
+        <h2>While Loop</h2>
+        <p>This while loop has the user click the "ok" button while x is less than or equal to 5. When x is no longer less than or equal to 5 the loop ends. </p>
+        <input type=button onclick=go() value="Click Me">
+        
+        <h2>Do While Loop</h2>
+        <p>Do while Loops are almost identical to while loops in how they opperate. The difference is in the code. The while loops condition is at the start and the do while condition is at the end.   </p>
+        <p>Also, notice how I put the x++; before the alert. This adds one to x before the counter making the counter start out at 1 and end with 6.</p>
+        <input type=button onclick=go2() value="Click Me">
+
+        <h2>For Loop</h2>
+        <p>As long as this For Loop is true( i is less than 5) it will run and have the user click "ok". When the For loop becomes False ( i equals 5) the loop ends. </p>
+        <input type=button onclick=go3() value="Click Me">
+
+        <h2>For/In Loop</h2>
+        <p>For/In Loop loops through the properties of an object. I set a variable as date and then put the dates properties as month: may, day: 20th, and year: 2019. The loop will run through the properties in the variable everytime the user clicks and display the next property. </p>
+        <input type=button onclick=go4() value="Click Me">
+
+        <h2>For/Of Loop</h2>
+        <p>While the for/in loop iterates over property names, the for/of loop iterates over property values. </p>
+        <input type=button onclick=go5() value="Click Me">
+
+        <h2>Parameters</h2>
+        <p>This function has parameters. function go6(a = 5,b = 5,c = a*b)  </p>
+        <input type=button onclick=go6() value="Click Me">
+    </main>
+</body>
+</html>

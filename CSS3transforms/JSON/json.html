@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON and AJAX Fluency Examples</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>JSON and AJAX</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href= "../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+    <hr>
+    <main>
+        <h2>Using JSON and AJAX to create:</h2>
+        <h1>Weather Summery for Salt Lake City, Utah</h1>
+        <p>I am retreiving this information from <a href ="https://openweathermap.org">openweathermap.org</a></p>
+        <p>I am also using AJAX XMLHttpRequest to request the data from the server.</p>
+        <div class="conditions">
+            <div class="place">
+                <h2>Weather conditions for <span id="place">city</span></h2>
+                <h3>Current Conditions</h3>
+                <p>Currently: <span id="sky">currently</span></p>
+                <p>Temperature: <span id ="temp">temp</span>°</p>
+                <p>Humidity: <span id ="humidity">humidity</span>%</p>
+                <p>Wind: <span id="windSpeed"></span>mph</p>
+                <p>Feels like: <span id="windChill"></span>°</p>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

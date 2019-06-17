@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Events</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>JavaScript Events</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <div id = "entirePage">
+                <h2>Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events</h2>
+                <p>Examples of different events</p>
+
+                <hr>
+                <div id = "box1">
+                <h3>onload event</h3>
+                <p>The image swings in when the page loads.</p>
+                <p>Try refreshing to see it again.</p>
+                <img id = "swoopIn" src = "images/batmanFlying.png" onload="slideIn()" class = "swoopInC" alt = "batman">
+                </div>    
+
+                <hr>
+                <h3>onclick event</h3>
+                <p>Click on image to change background color</p>
+                <img id = "batman" src = "images/batmanStanding3.png" onclick="bckgColor()" alt = "batman">
+                
+                <hr>
+                <h3>onmouseover and onmouseout events</h3>
+                <p>Change div text with mouseover and mouseout</p>
+                <div class = "mouseOver" onmouseover="mOver(this)" onmouseout="mOut(this)">
+                    Turn on the bat signal!
+                </div>
+            
+                <hr>
+                <h3>onchange event</h3>
+                <p>Click anywhere after typing your name and the text will go uppercase</p>
+                <input type="text" id="fname" onchange="upperCase()">
+                
+               <hr>
+               <h3>ontouch events</h3>
+               <p>Using ontouchmove you can touch the screen and slide the box off to the right.</p>
+               <p>Using ontouchstart you can touch the images to have them animate and transition on touch.</p>
+               <div id = "danceBox">
+                    <div id = "firstBox">
+                        <div id = "box2" ontouchmove = "slideOut('box2');">
+                        </div>
+                    </div>
+                    <div id = "secondBox">
+                    <img src ="images/batmanStanding3.png" id ="batStanding" ontouchstart ="dance()"  alt = "batman standing">
+                    <img src ="images/batmanStanding3.png" id ="batStanding2" ontouchstart ="dance2()"  alt = "batman standing2">
+                    <img src ="images/batmanStanding3.png" id ="batStanding3" ontouchstart ="dance3()"  alt = "batman standing3">
+                    </div>
+               </div>
+
+                <hr>
+
+            </div>
+
+        </main>
+        <footer></footer>
+
+    </body>
+        <script src="scripts.js"></script>
+
+    
+</html>

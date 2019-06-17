@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Transitions and Animations in javaScript and triggering them.</title>
+        <link href="style2.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Creating Transitions and Animations in javaScript and triggering them.</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <div id ="boxes">
+                 <div id = "firstBox">
+                    <button onclick ="fadeIn('box1');">Call for Batman!</button>
+                    <button onclick ="fadeOut('box1');">Turn off Bat Signal</button>
+ 
+                    <div id = "box1">
+                    <img src = "images/batSignal.png" alt = "batman signal">
+                    </div>
+                </div>
+
+                <div id = "secondBox">
+                    <button onclick ="slideShut('box2');">Swing Out</button> 
+                    <button onclick ="slideOpen('box2');">Swing In</button>
+             
+                    <div id = "box2">
+                        <img src = "images/batmanFlying.png" alt = "batman flying">
+                    </div>
+                </div>
+
+                <div id = "thirdBox">
+                    <button onclick ="slideIn('box3');">Slide In</button> 
+                    <button onclick ="slideOut('box3');">Slide Out</button>
+                    
+                    <div id = "box3">
+                        <img src ="images/batmanStanding2.png" alt = "batman standing2">
+                    </div>
+                </div>
+                
+                <div id = "fourthBox">
+                    <button onclick ="changeBG('box4', '#000');">Night</button> 
+                    <button onclick ="changeBG('box4', '#add8e6');">Day</button> 
+                    <button onclick ="changeBG('box4', '#FFF');">Original</button> 
+
+                    <div id = "box4">
+                    <img src ="images/batmanStanding3.png" alt = "batman standing">
+                    </div>
+                </div>
+            
+            </div>
+
+        </main>
+        
+        <footer></footer>
+
+    </body>
+        <script src="scripts2.js"></script>
+
+</html>

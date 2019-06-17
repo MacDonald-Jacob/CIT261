@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage Fluency Examples</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Local/Session Storage</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <h1>Web storage API</h1>
+            <p>Choose a image from the drop down menu, then try closing and reopening the page. Your choices are remembered and stored using Web Storage.</p>
+            <label for="image">Choose image:</label>
+            <select id="image">
+                <option value="images/blank.png" selected>Click here...</option>
+                <option value="images/batman.jpg" selected>Batman</option>
+                <option value="images/superman.jpg">Superman</option>
+                <option value="images/stormtrooper.jpg">StormTrooper</option>
+            </select>
+            <br>
+            <img src="images/blank.png">
+            
+            <h1>Storing and retrieving simple data</h1>
+            <p>This is an example of storing the data you input and then retrieving it after. Make sure you click the "Show Data" button again after you input your superhero.</p> 
+            <p>You can also click the "Clear Storage" button to clear your input and start over.</p>
+            <input type=button onclick=favHero() value="Show Data">
+            <input type=button onclick=clearStorage() value="Clear Storage">
+
+            <h1>Storing Arrays and Objects</h1>
+            <h3>Arrays</h3>
+            <p>Local Storage only supports strings so we have to use JSON.stringify() and JSON.parse() for arrays and objects.</p>
+            <p>You will have to look at the javaScript code to see the array and object in the code. These examples only display the results after they have been stringified to store them and then parsed to use them.</p>
+            <input type=button onclick=arrayStorage() value="Click Here">
+
+            <h3>Objects</h3>
+            <input type=button onclick=objStorage() value="Click Here">
+
+            <h1>Fun Fact</h1>
+            <h3>similar to localStorage, there is also sessionStorage</h3>
+            <p>Session storage is similar to localStorage; the only difference is while data stored in localStorage has no expiration time, data stored in sessionStorage gets cleared when the page session ends.</p>
+            <p>This example will only store the data as long as the browser is open. It will survive over reloads and restores.</p>
+            <p>(Remember to click the "Show Data" button again to see your input and the "Clear Storage" button to star over.)</p>
+            <input type=button onclick=favHero2() value="Show Data">
+            <input type=button onclick=clearStorage2() value="Clear Storage">
+           
+        
+        </main>
+        <footer></footer>
+
+    </body>
+        <script src="scriptAPI.js"></script>
+        <script src="scriptSimple.js"></script>
+    
+</html>

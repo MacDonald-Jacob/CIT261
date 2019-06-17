@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Transitions and Animations in CSS and triggering them with javaScript.</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Creating Transitions and Animations in CSS and triggering them with javaScript.</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href= "../index.html">Home</a></li>
+            </ul>
+        </nav>
+        <br>
+        <hr>
+        <main>
+            <div id ="boxes">
+                 <div id = "firstBox">
+                    <p>Using transition</p>
+                    <button onclick ="fadeIn();">Call Batman!</button>
+ 
+                    <div id = "box1">
+                        <img src = "images/night.png" id = "nightSky" alt = "night">
+                        <img src = "images/batSignal.png" id = "batSignal" class = "batSignalC" alt = "batman signal">
+                    </div>
+                </div>
+
+                
+                <div id = "secondBox">
+                    <p>Using animation</p>
+                    <button onclick ="swingIn('bigBatman');">Swing In</button>
+             
+                    <div id = "box2">
+                        <img src = "images/batmanFlying.png" id = "bigBatman" alt = "batman flying">
+                    </div>
+                </div>
+
+                
+                <div id = "thirdBox">
+                    <button onclick ="slideIn('box3');">Slide In</button> 
+                    
+                    <div id = "box3">
+                        <img src ="images/batmanStanding2.png" id = "swoopIn" class = "swoopInC" alt = "batman standing2">
+                    </div>
+                </div>
+                
+                
+                <div id = "fourthBox">
+                    <button onclick ="dance();">Dodge the bullets!</button> 
+
+                    <div id = "box4">
+                    <img src ="images/batmanStanding3.png" id ="batStanding"  alt = "batman standing">
+                    </div>
+                </div>
+            
+            </div>
+
+        </main>
+        
+        <footer></footer>
+
+    </body>
+        <script src="scripts.js"></script>
+
+</html>

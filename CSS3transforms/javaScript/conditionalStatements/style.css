@@ -1,0 +1,23 @@
+header h1 { color: #0076bb; }
+nav ul {padding: 0;}
+nav ul li {
+    float: left;
+    list-style-type: none;
+    border-right: 1px solid black;
+
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #f89c1f
+}
+main h2 {
+    clear:both;
+    margin: 2rem 0 0 0;
+}
+p {
+    margin: 5px 0 1rem 0;
+}
+hr {
+    margin-top:2rem;
+}

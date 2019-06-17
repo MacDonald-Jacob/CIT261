@@ -1,0 +1,61 @@
+header h1 {color: #0076bb; }
+nav ul {padding: 0;}
+nav ul li {
+    float: left;
+    list-style-type: none;
+
+}
+nav ul li a {
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #f89c1f;
+}
+main h1{
+    margin:3rem 0 0 0;
+    color: #09035e;
+}
+
+p {
+    margin: 0 0 2px 0;
+}
+hr {
+    margin-top:2rem;
+}
+div#boxes {
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+div#firstBox, div#secondBox, div#thirdBox, div#fourthBox{
+    width: 50%;
+    margin-bottom:30px;
+}
+
+div#box1 {
+    background: black;
+    width: 400px;
+    height: 310px;
+    display:none;
+}
+
+div#box2 {
+    background: #9DCEFF;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+div#box3 {
+    background: rgb(73, 91, 110);
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    margin-top: 1rem;
+    left: -600px;
+}
+
+div#box4 {
+    background: #FFF;
+    width: 210px;
+    height: 300px;
+}
